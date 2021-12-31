@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Shabnam;
+  src: url("./fonts/Shabnam-Bold-FD.eot");
+  src: url("./fonts/Shabnam-Bold-FD.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Shabnam-Bold-FD.woff2") format("woff2"),
+    url("./fonts/Shabnam-Bold-FD.woff") format("woff"),
+    url("./fonts/Shabnam-Bold-FD.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Shabnam;
+  src: url("./fonts/Shabnam-Light-FD.eot");
+  src: url("./fonts/Shabnam-Light-FD.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Shabnam-Light-FD.woff2") format("woff2"),
+    url("./fonts/Shabnam-Light-FD.woff") format("woff"),
+    url("./fonts/Shabnam-Light-FD.ttf") format("truetype");
+  font-weight: 300;
+}
+body,
+html,
+#root {
+  margin: 0;
+  font-family: Shabnam, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+*,
+.numleft select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+span {
+  font-family: Shabnam, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --platepadding: 0px 2em 0px 30%;
+  --dropfontsize: 13em;
+  --droppadding: 5px;
+  --rightfontsize: 12em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.plate-number {
+  display: flex !important;
+  margin: 0px !important;
+  padding: 1em !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plate-number > .row {
+  width: 100%;
+}
+.pn-plate {
+  background: url("plate.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: calc(100vw / 4.8);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: var(--platepadding);
+  align-items: center;
+  justify-content: space-between;
+}
+.numleft select {
+  font-size: var(--dropfontsize);
+  border: none;
+  text-align: center;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+}
+.numleft select option {
+  font-size: 100%;
+  background: transparent !important ;
 }
 
-.App-link {
-  color: #61dafb;
+.numright input[type="text"] {
+  padding: 0px;
+  width: 1.3em;
+  /* font-weight: 900; */
+  font-size: var(--rightfontsize);
+  border: none !important;
+  background: transparent !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.numright input {
+  padding: 5px 3px !important;
+  margin-right: 3px !important;
+}
+.plate-article {
+  direction: rtl;
+  text-align: right;
+}
+.plate-article p,
+ul,
+li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.plate-article h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.plate-result-row h3 {
+  font-size: 35px;
+  text-align: right;
+}
+input.plate-right-number {
+  text-align: right;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+  body {
+    --dropfontsize: 9em;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    --rightfontsize: 8em;
+    --dropfontsize: 8em;
+  }
+}
+
+@media only screen and (max-width: 954px) {
+  body {
+    --dropfontsize: 6em;
+    --rightfontsize: 6em;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  body {
+    --rightfontsize: 5em;
+    --platepadding: 0px 0em 0px 30%;
+    --dropfontsize: 4em;
+  }
+
+  .plate-number {
+    padding: 5px !important;
   }
 }

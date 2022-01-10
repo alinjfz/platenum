@@ -2,6 +2,10 @@
 
 This is a simple persian license plate number recognition with React.js
 
+## Online demo
+
+the online demo is available at [http://platenum.alinajafzadeh.com/]
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -3646,41 +3646,6 @@
           ]
         }
       ]
-    },
-    {
-      "province": "پلاک مورد نظر وجود ندارد",
-      "numbers": ["39", "50", "60", "70", "80", "90"],
-      "county": [
-        {
-          "countyName": "موجود نمی‌باشد",
-          "letternum": [
-            {
-              "letter": "all",
-              "num": "39"
-            },
-            {
-              "letter": "all",
-              "num": "50"
-            },
-            {
-              "letter": "all",
-              "num": "60"
-            },
-            {
-              "letter": "all",
-              "num": "70"
-            },
-            {
-              "letter": "all",
-              "num": "80"
-            },
-            {
-              "letter": "all",
-              "num": "90"
-            }
-          ]
-        }
-      ]
     }
   ],
   "provinceData": [
@@ -3697,6 +3662,11 @@
     { "number": "20", "province": "تهران" },
     { "number": "30", "province": "تهران" },
     { "number": "40", "province": "تهران" },
+    { "number": "50", "province": "تهران" },
+    { "number": "60", "province": "تهران" },
+    { "number": "70", "province": "تهران" },
+    { "number": "80", "province": "تهران" },
+    { "number": "90", "province": "تهران" },
     { "number": "12", "province": "خراسان رضوی" },
     { "number": "32", "province": "خراسان رضوی" },
     { "number": "42", "province": "خراسان رضوی" },
@@ -3737,6 +3707,7 @@
     { "number": "76", "province": "گیلان" },
     { "number": "28", "province": "همدان" },
     { "number": "18", "province": "همدان" },
+    { "number": "39", "province": "کرمانشاه" },
     { "number": "29", "province": "کرمانشاه" },
     { "number": "19", "province": "کرمانشاه" },
     { "number": "41", "province": "لرستان" },
